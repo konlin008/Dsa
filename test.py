@@ -18,4 +18,4 @@ sgpa_2=float(input("Enter second semester sgpa:"))
 cgpa=(sgpa_1+sgpa_2)/2
 
 print("Your cgpa is:>",cgpa)
-print(type(cgpa))
+
