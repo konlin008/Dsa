@@ -1,9 +1,6 @@
-def p2(N):
-    for i in range(N+1):
-        for j in range(i):
-            print("* ", end="")
+def p3(N):
+    for i in range(N):
+        for j in range(N-i):
+            print("*", end=" ")
         print()
-        
-p2(5)
-
-
+p3(5)
