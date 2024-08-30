@@ -1,12 +1,10 @@
 def p10(n):
     for i in range(n*2-1):
-        if(i<=n):
-            stars=i
+        if(i<n):
+            for j in range(i+1):
+                print("*", end=" ")
         else:
-            stars=n*2-i
-        for j in range(stars):
-            print("*", end="")
-        for k in range(n-stars):
-            print(end=" ")
+            for j in range(n*2-i-1):
+                print("*", end=" ")
         print()
 p10(5)
