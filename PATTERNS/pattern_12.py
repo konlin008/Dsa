@@ -1,13 +1,14 @@
-def numberCrown(n: int) -> None:
-    space=n*n-1
+def p12(n):
+    space=2*(n-1)
     for i in range(1,n+1):
         for j in range(1,i+1):
             print(j, end=" ")
-        for k in range(space):
-            print(" ", end="")
-        space= space-(n+1)
-        for l in range(i,0,-1):
-            print(l, end=" ")
+        for sp in range(space):
+            print(" ", end=" ")
+        space -= 2
+        for k in range(i,0,-1):
+            print(k, end=" ")
         print()
-    pass
         
+num=int(input("Enter A Number: "))
+p12(num)
