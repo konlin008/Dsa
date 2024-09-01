@@ -4,7 +4,7 @@ def p18(n):
         char = chr(ord(char) + n-1)
         for j in range(i+1):
             print(char, end=" ")
-            char = chr(ord(char) -1)
+            char = chr(ord(char) -1)  
         print()
         
 p18(5)
