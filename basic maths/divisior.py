@@ -2,7 +2,10 @@ def checkDivisior(num):
     for i in range(1,num+1):
         if(num%i==0):
             print(i)
-number=int(input("Enter A Number : "))   
+number=int(input("Enter A Number : "))  
+
+
+ 
 checkDivisior(number)
 import math
 def checkDivisior2(num):

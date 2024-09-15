@@ -1,16 +1,17 @@
 # palindrome
 
-def  checkTheNumber(num):
+def  checkTheNumber(x):
     reversedNumbr=0
-    dupNumber=num
-    while(num>0):
-        lastDigit=num%10
+    dupNumber=x
+    while(x>0):
+        lastDigit=x%10
         reversedNumbr=reversedNumbr*10+lastDigit
-        num=num//10
+        x=x//10
     if(reversedNumbr==dupNumber):
-        print(" Palindrome Number")
+        
+        return True
     else:
-        print("Not A  palindrome")
+        return False
         
 number=int(input("Enter A Number : "))        
 checkTheNumber(number)
