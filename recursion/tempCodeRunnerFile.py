@@ -1,9 +1,10 @@
-def printnof(n,count=1):
-    if(count>n):
-        return
+import re
+def ispel(i,s):
+    s = re.sub(r'[^\w\s]', '', s.lower().replace(" ", ""))
+    print(s)
+    if(i>(len(s)-1)//2): return True
+    elif(s[i]!=s[len(s)-i-1]):return False
     else:
-        print("Aman")
-        count=count+1
-        printnof(n,count)
-        
-printnof(5)
+        return ispel(i+1,s)
+ans=ispel(0,"madam aman : dh")
+print(ans)
