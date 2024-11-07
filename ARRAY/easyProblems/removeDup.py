@@ -9,3 +9,4 @@ def removeDup(nums):
     return i+1
     
 removeDup(arr)
+print(arr)
