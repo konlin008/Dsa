@@ -1,10 +1,12 @@
-nums = [0,1,0,3,12]
+nums = [0]
 def moveZeroes(nums):
-    n=len(nums)
-    i=nums[0]
-    for j in range(0,n):
-        if nums[j] != 0:
-            nums[i],nums[j]=nums[j],nums[i]
-            i +=1
-    print(nums)
-moveZeroes(nums)
+    for i in range(len(nums)):
+        if nums[i]==0:
+            j=i
+            break
+    for i in range(j+1,len(nums)):
+        if nums[i] !=0:
+            nums[j],nums[i]=nums[i],nums[j]
+            j +=1
+            print(nums)
+moveZeroes(nums)    
