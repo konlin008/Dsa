@@ -7,7 +7,7 @@
 
 def sort(arr):
     n=len(arr)
-    for i in range(n):
+    for i in range(n-1):
         max=i
         for j in range(i,n):
             if arr[j]>arr[max]: max=j
